@@ -3,7 +3,7 @@
   imports = [
     inputs.noctalia.nixosModules.default
     inputs.umbriel.nixosModules.default
-    
+
     ../programs/btop.nix # resource monitor
     ../programs/fastfetch.nix
     ../programs/fish.nix
@@ -16,12 +16,12 @@
     ../programs/steam.nix
     ../programs/yeetmouse.nix # better mouse acceleration
   ];
-  
+
   programs = { # using ../users/dotfiles/noctalia & umbriel
     noctalia.enable = true;
     umbriel.enable = true;
   };
-  
+
   nixpkgs.config.allowUnfree = true;
   hjem.users.${username}.packages = with pkgs; [
     aseprite # pixel art
@@ -45,7 +45,7 @@
     proton-vpn
     # rpi-imager
   ];
-  
+
   environment.systemPackages = with pkgs; [
     bat # better version of cat
     curl
