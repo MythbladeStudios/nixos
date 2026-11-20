@@ -37,7 +37,7 @@ let cursor-theme = "windows-11-concept-cursors"; in
       "icons/${cursor-theme}-light".source = "${dotfiles}/cursors/${cursor-theme}-light";
     };
 
-    files = { # hide unwanted apps
+    files = { # hide apps in noctalia's launcher
       ".local/share/applications/btop.desktop".text = ''
         [Desktop Entry]
         Type=Application
@@ -49,6 +49,13 @@ let cursor-theme = "windows-11-concept-cursors"; in
         [Desktop Entry]
         Type=Application
         Name=blueman-manager
+        NoDisplay=true
+      '';
+
+      ".local/share/applications/dev.noctalia.Noctalia.desktop".text = ''
+        [Desktop Entry]
+        Type=Application
+        Name=Noctalia
         NoDisplay=true
       '';
     };
