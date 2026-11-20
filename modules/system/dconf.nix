@@ -18,7 +18,7 @@ let
       style-variant = "follow";
       restore-session = false;
       highlight-current-line = true;
-      auto-indent = true;
+      auto-indent = false;
       spellcheck = true;
       custom-font = "Maple Mono NF 11";
     };
