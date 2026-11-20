@@ -5,7 +5,7 @@ files = [
   "modules/idle.toml",
   "modules/launcher.toml",
   "modules/lockscreen.toml",
-  "modules/notifcations.toml",
+  "modules/notifications.toml",
   "modules/osd.toml",
   "modules/plugins.toml",
   "modules/services.toml",
