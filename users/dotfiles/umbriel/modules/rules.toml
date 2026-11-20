@@ -4,18 +4,7 @@
 opacity = 0.90
 blur = true
 
-# Normal Windows
-
-[[window_rule]]
-match.app_id = [
-  "^librewolf$"
-]
-
-default_scrolling_extent = 1.0
-opacity = 1.0
-blur = false
-
-# Translucent Windows
+# Full Width
 
 [[window_rule]]
 match.app_id = [
@@ -26,7 +15,18 @@ match.app_id = [
 
 default_scrolling_extent = 1.0
 
-# Floating Windows
+# Full Width | Opaque
+
+[[window_rule]]
+match.app_id = [
+  "^librewolf$"
+]
+
+default_scrolling_extent = 1.0
+opacity = 1.0
+blur = false
+
+# Floating
 
 [[window_rule]]
 match.app_id = [
@@ -36,6 +36,8 @@ match.app_id = [
 ]
 
 default_floating = true
+
+# Floating | Opaque
 
 [[window_rule]]
 match.app_id = [
@@ -54,7 +56,7 @@ match.title = "^LibreWolf - Choose User Profile$"
 default_floating = true
 
 [[window_rule]] # File Picker
-match.app_id = "^dev.noctalia.luciole$"
+match.app_id = "^dev[.]noctalia[.]luciole$"
 match.is_dialog = true
 default_floating = true
 default_floating_size_px = { width = 800, height = 700 }
@@ -87,14 +89,10 @@ default_scrolling_extent = 0.25
 match.app_id = [
   "^steam_proton$",
   "^steam_app_[0-9]+$",
-  
   "^Buckshot Roulette$",
-  
-  "^com[.]mojang[.]minecraft$", # 26.3 & above
-  "^com[.]moonlight_stream[.]Moonlight$" # Desktop Streaming
+  "^com[.]mojang[.]minecraft$",
+  "^com[.]moonlight_stream[.]Moonlight$"
 ]
-
-# match.content_type = "game" # Not sure if it combines
 
 default_workspace = "2"
 default_scrolling_extent = 1.0
@@ -105,30 +103,12 @@ blur = false
 vrr = "always"
 hdr = "auto"
 
-# Minecraft
-
-[[window_rule]]
-match.title = "^Minecraft.*$" # 26.2 & below
-
-default_workspace = "2"
-default_scrolling_extent = 1.0
-
-opacity = 1.0
-blur = false
-
-vrr = "always"
-
-[[window_rule]] # Instance Logs
-match.title = "^Minecraft Game Output$"
-default_floating = true
-default_floating_size_px = { width = 1500, height = 1000 }
-
-[[window_rule]] # Loader Errors
+[[window_rule]] # Minecraft Loader Errors
 match.app_id = "^com-moulberry-pandora-LaunchWrapper$"
 default_workspace = "2"
 default_floating = true
 
-# Workspace Rules
+# Workspaces
 
 [[window_rule]] # Creative Things | DP-1 & eDP-1
 match.app_id = [
@@ -174,8 +154,6 @@ match.app_id = [
 ]
 
 default_floating = true
-
-# Layer Rules
 
 [[layer_rule]]
 match.namespace = [
