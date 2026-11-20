@@ -1,0 +1,58 @@
+[plugins]
+auto_update = "official"
+enabled = [
+  "yuuto/calculator",
+  "liamwh/emoji-picker",
+  "nightwatch75/dns-switcher",
+  "nightwatch75/file-search",
+  "ramosdetrigo/godot-provider",
+  "mindnbytes/nix-status",
+  "rxtsel/portctl",
+  "cleboost/ssh-launcher",
+  "noctalia/timer",
+  "noctalia/umbriel-companion"
+]
+
+# Sources
+
+[[plugins.source]]
+name = "official"
+kind = "git"
+location = "https://github.com/noctalia-dev/official-plugins"
+enabled = true
+
+[[plugins.source]]
+name = "community"
+kind = "git"
+location = "https://github.com/noctalia-dev/community-plugins"
+enabled = true
+
+# Plugin Settings
+
+[plugin_settings."yuuto/calculator"]
+panel_placement = "floating"
+angle_unit = "deg"
+
+[plugin_settings."nightwatch75/dns-switcher"]
+panel_placement = "floating"
+providers = "cloudflare,opendns,adguard,quad9"
+
+[plugin_settings."nightwatch75/file-search"]
+search_folder = "/etc/nixos"
+
+[plugin_settings."mindnbytes/nix-status"]
+details_placement = "floating"
+
+flake_dir = "/etc/nixos"
+nixos_configuration = "voyageur-02"
+use_themed_logos = true
+
+# Offical Plugins
+
+[plugin_settings."noctalia/timer"]
+panel_placement = "floating"
+
+[plugin_settings."noctalia/umbriel-companion"]
+panel_placement = "floating"
+panel_layer = "overlay"
+

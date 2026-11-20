@@ -1,0 +1,208 @@
+[lockscreen]
+blur_intensity = 0.15
+tint_intensity = 0.30
+
+transition = ["fade"]
+transition_duration = 1300
+
+fingerprint = false
+
+[lockscreen_widgets]
+enabled = true
+widget_order = [
+  "login-box@eDP-1",
+  "lockscreen-widget-clock-eDP-1",
+  "lockscreen-widget-date-eDP-1",
+  "lockscreen-widget-music_player-eDP-1",
+  "lockscreen-widget-logout_button-eDP-1",
+  "lockscreen-widget-reboot_button-eDP-1",
+  "lockscreen-widget-shutdown_button-eDP-1"
+]
+
+# atelier-01 | DP-1
+
+# wip :p
+
+# voyageur-02 | eDP-1
+
+[lockscreen_widgets.widget."login-box@eDP-1"]
+type = "login_box"
+output = "eDP-1"
+
+box_height = 70.0
+box_width = 360
+
+placement_height = 1200.0
+placement_width = 1920.0
+
+rotation = 0.0
+
+cx = 960.0
+cy = 664.0
+
+[lockscreen_widgets.widget."login-box@eDP-1".settings]
+layout = "compact"
+center_password_text = true
+
+show_caps_lock = true
+show_keyboard_layout = false
+show_login_button = false
+show_media = false
+show_media_controls = true
+show_password_reveal = false
+show_session_buttons = true
+show_unlock_hint = false
+show_weather = false
+
+input_opacity = 1.0
+input_radius = 5.0
+
+background_opacity = 0.0
+background_radius = 5.0
+background_color = "surface_container"
+
+[lockscreen_widgets.widget.lockscreen-widget-clock-eDP-1]
+type = "clock"
+output = "eDP-1"
+
+box_height = 112.0
+box_width = 432.0
+
+placement_height = 1200.0
+placement_width = 1920.0
+
+rotation = 0.0
+
+cx = 960.0
+cy = 520.0
+
+[lockscreen_widgets.widget.lockscreen-widget-clock-eDP-1.settings]
+format = "%I:%M %p"
+shadow = true
+
+background = false
+background_opacity = 0.0
+background_padding = 10
+background_radius = 5
+
+[lockscreen_widgets.widget.lockscreen-widget-date-eDP-1]
+type = "clock"
+output = "eDP-1"
+
+placement_height = 1200.0
+placement_width = 1920.0
+
+box_height = 32.0
+box_width = 368.0
+
+rotation = 0.0
+
+cx = 960.0
+cy = 584.0
+
+[lockscreen_widgets.widget.lockscreen-widget-date-eDP-1.settings]
+format = "%A, %B %d"
+shadow = true
+
+background = false
+background_opacity = 0.0
+background_radius = 5
+
+# Music Player
+
+[lockscreen_widgets.widget.lockscreen-widget-music_player-eDP-1]
+type = "media_player"
+output = "eDP-1"
+
+placement_height = 1200.0
+placement_width = 1920.0
+
+box_height = 144.0
+box_width = 336.0
+
+rotation = 0.0
+
+cx = 176.0
+cy = 80.0
+
+[lockscreen_widgets.widget.lockscreen-widget-music_player-eDP-1.settings]
+audio_visualizer = true
+album_art_background = false
+album_art_blur = 24
+
+layout = "horizontal"
+hide_when_no_media = true
+
+background = true
+background_opacity = 0.90
+background_radius = 5
+
+# Session Buttons
+
+[lockscreen_widgets.widget.lockscreen-widget-logout_button-eDP-1]
+output = "eDP-1"
+type = "button"
+
+placement_height = 1200.0
+placement_width = 1920.0
+
+box_height = 48.0
+box_width = 48.0
+
+rotation = 0.0
+
+cx = 904.0
+cy = 720.0
+
+[lockscreen_widgets.widget.lockscreen-widget-logout_button-eDP-1.settings]
+glyph = "logout"
+command = "noctalia msg session logout"
+variant = "default"
+hover_background = "hover"
+background = true
+
+
+[lockscreen_widgets.widget.lockscreen-widget-reboot_button-eDP-1]
+type = "button"
+output = "eDP-1"
+
+placement_height = 1200.0
+placement_width = 1920.0
+
+box_height = 48.0
+box_width = 48.0
+
+rotation = 0.0
+
+cx = 960.0
+cy = 720.0
+
+[lockscreen_widgets.widget.lockscreen-widget-reboot_button-eDP-1.settings]
+glyph = "reboot"
+command = "noctalia msg session reboot"
+variant = "default"
+hover_background = "hover"
+background = true
+
+[lockscreen_widgets.widget.lockscreen-widget-shutdown_button-eDP-1]
+output = "eDP-1"
+type = "button"
+
+placement_height = 1200.0
+placement_width = 1920.0
+
+box_height = 48.0
+box_width = 48.0
+
+rotation = 0.0
+
+cx = 1016.0
+cy = 720.0
+
+[lockscreen_widgets.widget.lockscreen-widget-shutdown_button-eDP-1.settings]
+glyph = "power"
+command = "noctalia msg session shutdown"
+variant = "default"
+hover_background = "hover"
+background = true
+

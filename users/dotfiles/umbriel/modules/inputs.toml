@@ -1,0 +1,25 @@
+[input]
+middle_click_paste = false
+
+[input.keyboard]
+layout = "us"
+repeat_rate = 40
+repeat_delay = 300
+numlock_toggle = true
+
+[input.mouse] # Let Yeetmouse handle this
+natural_scroll = false
+accel_profile = "flat"
+sensitivity = 0.0
+scroll_wheel_step = 60
+
+[input.cursor]
+theme = "windows-11-concept-cursors-dark"
+size = 24
+hardware_cursor = true
+hide_when_typing = true
+hide_timeout_ms = 30000 # 30s
+
+[input.focus]
+follows_mouse = "sloppy"
+

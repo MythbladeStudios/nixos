@@ -1,0 +1,80 @@
+[dock]
+enabled = true
+position = "bottom"
+active_monitor_only = false
+
+main_axis_padding = 4
+cross_axis_padding = 4
+
+icon_size = 40
+item_spacing = 4
+background_opacity = 0.90
+
+shadow = true
+radius = 5
+margin_edge = 10
+
+show_running = true
+smart_auto_hide = true
+reserve_space = false
+layer = "top"
+
+magnification = true
+magnification_scale = 1.10
+
+active_scale = 1.0
+inactive_scale = 1.0
+
+active_opacity = 1.0
+inactive_opacity = 1.0
+
+launcher_position = "none"
+show_instance_count = false
+show_dots = true
+
+# atelier-01 | DP-1
+# Note: Playaround with the pinned apps (atelier-01)
+
+[dock.monitor.atelier-primary]
+match = "DP-1"
+pinned = [
+  "kitty",
+  "dev.noctalia.luciole",
+  "librewolf",
+  "ladybird",
+  "sonora",
+  "obsidian",
+  "blender",
+  "blockbench"
+]
+
+# atelier-02 | DP-2
+
+[dock.monitor.atelier-secondary]
+match = "DP-2"
+pinned = [
+  "steam",
+  "com.moulberry.pandoralauncher",
+  "fluxer",
+  "equibop",
+  "com.obsproject.Studio",
+  "idea"
+]
+
+# voyageur-02 | eDP-1
+
+[dock.monitor.voyageur]
+match = "eDP-1"
+pinned = [
+  "kitty",
+  "dev.noctalia.luciole",
+  "librewolf",
+  "steam",
+  # "com.moulberry.pandoralauncher",
+  "sonora",
+  "obsidian",
+  "equibop",
+  "com.obsproject.Studio",
+  "blockbench"
+]
+

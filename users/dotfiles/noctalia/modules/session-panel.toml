@@ -1,0 +1,21 @@
+[[shell.session.actions]]
+action = "logout"
+countdown_seconds = 3.0
+enabled = true
+shortcut = "l"
+variant = "default"
+
+[[shell.session.actions]]
+action = "reboot"
+countdown_seconds = 3.0
+enabled = true
+shortcut = "r"
+variant = "default"
+
+[[shell.session.actions]]
+action = "shutdown"
+countdown_seconds = 3.0
+enabled = true
+shortcut = "s"
+variant = "default"
+

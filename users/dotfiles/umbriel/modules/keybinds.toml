@@ -1,0 +1,117 @@
+[keybinds]
+
+# Session / System
+
+"Mod+L" = "spawn noctalia msg session lock"
+"Mod+Escape" = "spawn noctalia msg panel-toggle session"
+"Mod+Shift+Slash" = "cheatsheet-toggle"
+
+# Programs
+
+"Mod+B" = "spawn librewolf"
+"Mod+D" = "spawn equibop"
+"Mod+E" = "spawn luciole"
+"Mod+M" = "spawn pandora_launcher"
+"Mod+O" = "spawn obsidian"
+"Mod+Q" = "spawn kitty"
+"Mod+S" = "spawn sonora"
+
+"Mod+Shift+D" = "spawn fluxer"
+"Mod+Shift+O" = "spawn obs"
+"Mod+Shift+S" = "spawn steam"
+
+# Noctalia
+
+"Mod+V" = "spawn noctalia msg panel-toggle clipboard"
+"Mod+W" = "spawn noctalia msg panel-toggle wallpaper"
+
+"Mod+Space" = "spawn noctalia msg panel-toggle launcher"
+"Mod+Comma" = "spawn noctalia msg panel-toggle control-center"
+"Mod+Slash" = "spawn noctalia msg settings-toggle"
+
+"Mod+Semicolon" = "spawn noctalia msg panel-toggle yuuto/calculator:panel"
+"Mod+Apostrophe" = "spawn noctalia msg panel-toggle mythblade/carousel-cards:panel"
+"Mod+Period" = "spawn noctalia msg panel-toggle liamwh/emoji-picker:compact"
+
+# Navigation
+
+"Alt+Tab" = "spawn noctalia msg window-switcher"
+"Mod+Tab" = "overview-toggle"
+
+"Mod+WheelUp" = "workspace-previous"
+"Mod+WheelDown" = "workspace-next"
+
+# Focus / Move
+
+"Mod+Up" = "window-focus-up"
+"Mod+Down" = "window-focus-down"
+"Mod+Left" = "window-focus-left"
+"Mod+Right" = "window-focus-right"
+
+"Mod+Shift+Up" = "window-move-up"
+"Mod+Shift+Down" = "window-move-down"
+"Mod+Shift+Left" = "window-move-left"
+"Mod+Shift+Right" = "window-move-right"
+
+# Window
+
+"Mod+P" = "window-toggle-floating"
+"Mod+Shift+P" = "window-toggle-pinned"
+
+"Mod+C" = "window-close"
+"Mod+MouseMiddle" = "window-close"
+
+"Mod+F" = "window-toggle-maximize"
+"Mod+Shift+F" = "window-toggle-fullscreen"
+
+# Workspaces
+
+"Mod+Y" = "window-cycle-primary-extent"
+"Mod+Shift+Y" = "workspace-set-layout toggle scrolling dwindle stacking"
+
+"Mod+1" = "workspace-switch --name 1"
+"Mod+2" = "workspace-switch --name 2"
+"Mod+3" = "workspace-switch --name 3"
+"Mod+4" = "workspace-switch --name 4"
+"Mod+5" = "workspace-switch --name 5"
+"Mod+6" = "workspace-switch --name 6"
+"Mod+7" = "workspace-switch --name 7"
+
+"Mod+8" = "workspace-switch --name 8"
+"Mod+9" = "workspace-switch --name 9"
+"Mod+0" = "workspace-switch --name 0"
+
+"Mod+Shift+1" = "window-move-to-workspace --name 1"
+"Mod+Shift+2" = "window-move-to-workspace --name 2"
+"Mod+Shift+3" = "window-move-to-workspace --name 3"
+"Mod+Shift+4" = "window-move-to-workspace --name 4"
+"Mod+Shift+5" = "window-move-to-workspace --name 5"
+"Mod+Shift+6" = "window-move-to-workspace --name 6"
+"Mod+Shift+7" = "window-move-to-workspace --name 7"
+
+"Mod+Shift+8" = "window-move-to-workspace --name 8"
+"Mod+Shift+9" = "window-move-to-workspace --name 9"
+"Mod+Shift+0" = "window-move-to-workspace --name 0"
+
+# Hardware / Media
+
+"XF86AudioRaiseVolume" = { action = "spawn noctalia msg volume-up", allow_when_locked = true }
+"XF86AudioLowerVolume" = { action = "spawn noctalia msg volume-down", allow_when_locked = true }
+"XF86AudioMute" = { action = "spawn noctalia msg volume-mute", allow_when_locked = true, repeat = false }
+
+"XF86AudioPlay" = { action = "spawn noctalia msg media toggle", allow_when_locked = true, repeat = false }
+"XF86AudioNext" = { action = "spawn noctalia msg media next", allow_when_locked = true }
+"XF86AudioPrev" = { action = "spawn noctalia msg media previous", allow_when_locked = true }
+
+"XF86MonBrightnessUp" = { action = "spawn noctalia msg brightness-up", allow_when_locked = true }
+"XF86MonBrightnessDown" = { action = "spawn noctalia msg brightness-down", allow_when_locked = true }
+
+"Shift+F9" = { action = "spawn wpctl set-mute @DEFAULT_SOURCE@ toggle", repeat = false } # mute mic
+
+# Capture
+
+"Mod+A" = "spawn noctalia msg annotate"
+"Mod+Shift+A" = "spawn noctalia msg screenshot-annotate"
+"Mod+F11" = "spawn noctalia msg screenshot-region"
+"Mod+Shift+F11" = "spawn noctalia msg screenshot-fullscreen"
+
