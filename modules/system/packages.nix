@@ -27,13 +27,11 @@
     aseprite # pixel art
     blockbench
     cine # video player
-    constrict # video compressor
     decibels # audio player
     equibop # discord client
     # fluxer | waiting for it to be packaged
     fzf # file search dependency | noctalia plugin
     # gnome-calendar | don't really use atm
-    # gnome-disk-utility # usb formatter
     gnome-text-editor
     jq # json parcer | required for some noctalia templates
     librewolf # web browser
