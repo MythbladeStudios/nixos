@@ -1,0 +1,22 @@
+[notification]
+enable_daemon = true
+
+show_app_name = true
+show_actions = true
+
+monitors = ["eDP-1", "DP-2"]
+position = "bottom_right"
+
+layer = "overlay"
+scale = 0.9
+
+offset_x = 10
+offset_y = 10
+
+background_opacity = 0.90
+border = true
+border_color = "surface_container"
+
+max_visible = 5
+history_retention_hours = 3
+

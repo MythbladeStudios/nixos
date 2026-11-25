@@ -1,0 +1,172 @@
+# Rules
+
+[[window_rule]]
+opacity = 0.90
+blur = true
+
+# Full Width
+
+[[window_rule]]
+match.app_id = [
+  "^md[.]obsidian[.]Obsidian$",
+  "^sonora$",
+  "^Yeet Mouse$"
+]
+
+default_scrolling_extent = 1.0
+
+# Full Width | Opaque
+
+[[window_rule]]
+match.app_id = [
+  "^librewolf$"
+]
+
+default_scrolling_extent = 1.0
+opacity = 1.0
+blur = false
+
+# Floating
+
+[[window_rule]]
+match.app_id = [
+  "^org[.]gnome[.]Calculator$",
+  "^org[.]gnome[.]Decibels$", # Audio Player
+  "^proton[.]vpn[.]app[.]gtk$"
+]
+
+default_floating = true
+
+# Floating | Opaque
+
+[[window_rule]]
+match.app_id = [
+  "^io[.]github[.]diegopvlk[.]Cine$", # Video Player
+  "^org[.]gnome[.]Loupe$", # Image Viewer
+  "^org[.]gnome[.]Snapshot$" # Camera
+]
+
+default_floating = true
+
+opacity = 1.0
+blur = false
+
+[[window_rule]]
+match.title = "^LibreWolf - Choose User Profile$"
+default_floating = true
+
+[[window_rule]] # File Picker
+match.app_id = "^dev[.]noctalia[.]luciole$"
+match.is_dialog = true
+default_floating = true
+default_floating_size_px = { width = 800, height = 700 }
+
+# Steam
+
+[[window_rule]]
+match.app_id = "^steam$"
+default_workspace = "8"
+default_floating = true
+opacity = 1.0
+blur = false
+
+[[window_rule]] # Main Steam Client
+match.title = "^Steam$"
+match.app_id = "^steam$"
+default_floating = false
+default_scrolling_extent = 1.0
+
+[[window_rule]]
+match.app_id = "^steam$"
+match.title = "^Friends List$"
+
+default_floating = false
+default_scrolling_extent = 0.25
+
+# Games
+
+[[window_rule]]
+match.app_id = [
+  "^steam_proton$",
+  "^steam_app_[0-9]+$",
+  "^Buckshot Roulette$",
+  "^com[.]mojang[.]minecraft$",
+  "^com[.]moonlight_stream[.]Moonlight$"
+]
+
+default_workspace = "2"
+default_scrolling_extent = 1.0
+
+opacity = 1.0
+blur = false
+
+vrr = "always"
+hdr = "auto"
+
+[[window_rule]] # Minecraft Loader Errors
+match.app_id = "^com-moulberry-pandora-LaunchWrapper$"
+default_workspace = "2"
+default_floating = true
+
+# Workspaces
+
+[[window_rule]] # Creative Things | DP-1 & eDP-1
+match.app_id = [
+  "^Aseprite$",
+  "^blender$",
+  "^blockbench$"
+]
+
+default_workspace = "4"
+default_scrolling_extent = 1.0
+
+opacity = 1.0
+blur = false
+
+[[window_rule]] # Minecraft Launcher | DP-2
+match.app_id = "^PandoraLauncher$"
+default_workspace = "8"
+default_scrolling_extent = 1.0
+
+[[window_rule]] # DP-2
+match.app_id = "^com[.]obsproject[.]Studio$"
+default_workspace = "9"
+default_scrolling_extent = 1.0
+
+[[window_rule]] # Social | DP-2
+match.app_id = [
+  "^equibop$",
+  "^fluxer$"
+]
+
+default_workspace = "0"
+default_scrolling_extent = 1.0
+
+opacity = 1.0
+blur = false
+
+# Noctalia
+
+[[window_rule]]
+match.app_id = [
+  "^dev[.]noctalia[.]Noctalia$", # Settings
+  "^dev[.]noctalia[.]UmbrielSharePicker$"
+]
+
+default_floating = true
+
+[[layer_rule]]
+match.namespace = [
+  "^noctalia-bar-[^\"]+",
+  "^noctalia-notification",
+  "^noctalia-dock",
+  "^noctalia-panel",
+  "^noctalia-attached-panel",
+  "^noctalia-osd",
+  "^noctalia-desktop-widget-[^\"]*"
+]
+
+blur = true
+blur_ignore_alpha = 0.5
+blur_popups = true
+

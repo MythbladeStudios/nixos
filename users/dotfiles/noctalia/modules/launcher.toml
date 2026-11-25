@@ -1,0 +1,37 @@
+[shell.launcher]
+categories = false
+show_icons = true
+show_app_origin_indicator = true
+compact = false
+app_grid = false
+show_app_actions = false
+sort_by_usage = false
+
+category_icons_only = true
+show_session_button = false
+
+fetch_exchange_rates = true
+provider_prefix = "/"
+auto_paste = "auto"
+
+pinned = []
+
+# Prefixes
+
+[shell.launcher.providers.calculator]
+prefix = "cal"
+
+[shell.launcher.providers.emoji]
+prefix = "emj"
+
+[shell.launcher.providers.session]
+prefix = "power"
+
+[shell.launcher.providers.wallpaper]
+prefix = "wpapers"
+
+# Custom Prefixes
+
+[shell.launcher.providers."nightwatch75/file-search:launcher"]
+prefix = "nx"
+

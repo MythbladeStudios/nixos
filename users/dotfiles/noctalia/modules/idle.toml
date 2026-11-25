@@ -1,0 +1,31 @@
+[idle]
+behavior_order = ["lock", "screen-off", "suspend"]
+pre_action_fade_seconds = 0
+
+[idle.behavior.lock]
+enabled = true
+timeout = 600 # 10m
+action = "lock"
+
+[idle.behavior.screen-off]
+enabled = false
+timeout = 660 # 11m
+action = "screen_off"
+
+[idle.behavior.suspend]
+enabled = false
+timeout = 900 # 15m
+action = "lock_and_suspend"
+
+[idle.behavior.idle-notification]
+enabled = true
+timeout = 300 # 5m
+
+action = "command"
+command = '''
+noctalia msg notification-show '{"summary":"Status","body":"Waiting for user input - AFK","icon":"zzz"}'
+'''
+resume_command = '''
+noctalia msg notification-show '{"summary":"Status","body":"No longer idle - Welcome Back","icon":"confetti"}'
+'''
+

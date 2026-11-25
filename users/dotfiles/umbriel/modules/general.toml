@@ -1,0 +1,15 @@
+[general]
+mod_key = "Super"
+xwayland = true
+show_cheatsheet = false
+focus_on_activate = true
+honor_restored_maximize = false
+autostart = [
+  "noctalia --daemon",
+  "sh -c 'sleep 1 && exec sonora'",
+  "steam -silent"
+]
+
+[workspaces]
+back_and_forth = true
+

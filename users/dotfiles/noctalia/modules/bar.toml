@@ -1,0 +1,111 @@
+[bar.main]
+position = "top"
+background_opacity = 0.90
+
+capsule_radius = 5
+radius = 5
+
+margin_ends = 10
+margin_edge = 10
+
+concave_edge_corners = false
+hover_highlight = false
+
+start = []
+center = []
+end = []
+
+# atelier-01 | DP-1
+
+[bar.main.monitor.atelier-primary] # wip
+match = "DP-1"
+enabled = true
+
+start = [
+  "launcher",
+  "workspaces",
+  "umbriel-companion",
+  "privacy"
+]
+
+center = [
+  "clock"
+]
+
+end = [
+  "media",
+  "tray",
+  "notifications",
+  "clipboard",
+  "volume",
+  "brightness",
+  "session"
+]
+
+[bar.main.monitor.atelier-primary.dead_zone.actions]
+scroll_down = "volume-down 5"
+scroll_up = "volume-up 5"
+
+# atelier-01 | DP-2
+
+[bar.main.monitor.atelier-secondary] # wip
+match = "DP-2"
+enabled = true
+
+start = [
+  "launcher",
+  "workspaces",
+  "dns-switcher"
+]
+
+center = [
+  "date"
+]
+
+end = [
+  "calculator",
+  "network",
+  "bluetooth",
+  "session"
+]
+
+[bar.main.monitor.atelier-secondary.dead_zone.actions]
+scroll_down = "brightness-down 5"
+scroll_up = "brightness-up 5"
+
+# voyageur-02 | eDP-1
+
+[bar.main.monitor.voyageur]
+match = "eDP-1"
+
+start = [ 
+  "launcher",
+  "workspaces",
+  "umbriel-companion",
+  "privacy",
+  "dns-switcher"
+]
+
+center = [
+  "clock",
+  "dot",
+  "date"
+]
+
+end = [
+  "media",
+  "tray",
+  "notifications",
+  "clipboard",
+  "network",
+  "bluetooth",
+  "volume",
+  "brightness",
+  "battery",
+  "session"
+]
+
+[bar.main.monitor.voyageur.dead_zone.actions]
+scroll_down = "volume-down 5"
+scroll_up = "volume-up 5"
+

@@ -1,0 +1,12 @@
+[animation]
+enabled = true
+duration_ms = 150
+
+[effects.preset.border_gradient]
+kind = "border"
+shader = "../shaders/border_gradient.glsl"
+palette = true
+
+[effects]
+border = "border_gradient"
+

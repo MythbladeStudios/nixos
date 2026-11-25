@@ -1,0 +1,74 @@
+# Widgets
+
+[widget.clock]
+format = "%I:%M %p"
+
+[widget.clock.actions]
+left = "panel-toggle control-center home"
+
+[widget.date]
+format = "%A, %B %d"
+
+[widget.media]
+artist_first = false
+art_size = 16
+
+min_length = 80
+max_length = 300
+
+hide_when_no_media = true
+title_scroll = "on_hover"
+
+capsule = true
+
+[widget.network]
+show_label = false
+
+[widget.privacy]
+interactive = false
+
+[widget.tray]
+pinned = ["proton.vpn.app.gtk", "equibop", "fluxer", "steam"]
+hidden = ["blueman"]
+
+hide_passive = true
+drawer = true
+drawer_columns = 5
+detached_panel = true
+
+[widget.workspaces]
+show_labels = false
+show_tooltip = false
+
+capsule = true
+capsule_radius = 10
+
+# Custom Widgets
+
+[widget.calculator]
+type = "yuuto/calculator:bar"
+
+[widget.dns-switcher]
+type = "nightwatch75/dns-switcher:dns-switcher"
+color = "outline_variant"
+show_label = false
+show_tooltip = false
+
+[widget.umbriel-companion]
+type = "noctalia/umbriel-companion:bar"
+color = "outline_variant"
+
+# Text Widgets
+
+[widget.dot]
+type = "text"
+text = "・"
+font_weight = 900
+
+anchor = true
+interactive = false
+
+[widget.spacer_100px]
+type = "spacer"
+length = 100
+

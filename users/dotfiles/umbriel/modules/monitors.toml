@@ -1,0 +1,27 @@
+# atelier-01
+
+[output.DP-1] # Primary | Left
+mode = "2560x1440@300"
+position = [0, 0]
+scale = 1
+vrr = "fullscreen"
+workspaces = ["1", "2", "3", "4", "5", "6", "7"]
+focus_at_startup = true
+
+[output.DP-2] # Secondary | Right
+mode = "2560x1440@300"
+position = [2560, 0]
+scale = 1
+vrr = "fullscreen"
+workspaces = ["8", "9", "0"]
+
+# voyageur-02
+
+[output.eDP-1] # Laptop Display
+mode = "1920x1200@60"
+position = [0, 0]
+scale = 1
+vrr = "fullscreen"
+workspaces = ["1", "2", "3", "4", "5", "6", "7"]
+focus_at_startup = true
+

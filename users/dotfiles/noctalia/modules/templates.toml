@@ -1,0 +1,29 @@
+[theme]
+mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "m3-content"
+
+[theme.templates]
+enable_builtin_templates = true
+builtin_ids = [
+  "btop",
+  "gtk3",
+  "gtk4",
+  "kitty",
+  "luciole",
+  "umbriel",
+  "qt"
+]
+
+enable_community_templates = true
+community_ids = [
+  "bat",
+  "blender",
+  "discord",
+  "fastfetch",
+  "obs",
+  "obsidian",
+  "pandora-launcher",
+  "sonora"
+]
+

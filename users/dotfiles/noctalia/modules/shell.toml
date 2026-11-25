@@ -1,0 +1,75 @@
+[shell]
+corner_radius_scale = 0.5
+
+button_borders = false
+input_borders = false
+popup_borders = true
+card_borders = false
+
+popup_shadows = true
+
+font_family = "Adwaita Sans"
+date_format = "%A, %B %d"
+time_format = "%I:%M %p"
+
+offline_mode = false
+external_ip_enabled = false
+telemetry_enabled = false
+
+umbriel_overview_type_to_launch_enabled = true
+polkit_agent = true
+screen_time_enabled = true
+
+avatar_path = "~/.config/noctalia/avatars/lighthouse.jpg"
+
+settings_show_advanced = true
+settings_expand_all_groups = false 
+
+[shell.window_switcher]
+show_app_icon = false
+show_all_outputs = false
+show_caption = true
+
+mru = true
+
+[shell.mpris]
+blacklist = ["Ladybird", "librewolf"]
+
+[shell.greeter_sync]
+auto_sync = true
+
+[shell.launcher]
+track_usage = false
+width = 650
+
+[shell.panel]
+borders = true
+floating_offset = 10
+
+control_center_placement = "floating"
+control_center_position = "top_center"
+
+open_near_click_control_center = true
+list_item_background = true
+transparency_mode = "soft"
+
+session_placement = "floating"
+session_position = "top_center"
+
+wallpaper_placement = "floating"
+wallpaper_position = "center"
+
+wallpaper_show_names = false
+
+[shell.screen_corners]
+enabled = true
+size = 5
+
+[shell.screenshot]
+directory = "/home/mythblade/Pictures/Screenshots"
+show_cursor = true
+annotate = true
+
+pipe_to_command = false
+pipe_command = ""
+

@@ -1,0 +1,24 @@
+[layout]
+mode = "scrolling"
+gap = 10
+extent_presets = [0.333, 0.5, 0.667, 1.0]
+
+[layout.dwindle]
+preserve_split = true
+new_toward_cursor = true
+
+[layout.scrolling]
+default_extent_fraction = 0.5
+center_underfull_strip = true
+center_focused = "on_overflow"
+
+# Workspace Overrides
+
+[[workspace]]
+layout.mode = "dwindle"
+index = 1
+
+[[workspace]]
+layout.mode = "dwindle"
+index = 3
+

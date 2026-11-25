@@ -1,0 +1,22 @@
+[wallpaper]
+enabled = true
+
+fill_mode = "span"
+fill_color = "#000000"
+
+transition = ["fade"]
+transition_duration = 1300
+transition_on_startup = true
+
+directory = "/home/mythblade/Pictures/Wallpapers"
+per_monitor_directories = false
+
+[wallpaper.default]
+path = "/home/mythblade/Pictures/Wallpapers/last_of_us-ellie-01-1440p.jpg"
+
+[wallpaper.automation]
+enabled = true
+interval_seconds = 3600 # 1h
+order = "random"
+recursive = true
+
