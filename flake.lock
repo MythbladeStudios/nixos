@@ -134,11 +134,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1795650234,
-        "narHash": "sha256-lnALS4Z+4Ego4L841ICoR6xAK5J6xRZW4ZjW7Rg/9P8=",
+        "lastModified": 1795653047,
+        "narHash": "sha256-u/eQpLPZ3kCDi+z6DakvwtnXn4Eeu6B326O2xzW1xFc=",
         "owner": "noctalia-dev",
         "repo": "luciole",
-        "rev": "1ac4c2760491d84751d1ffb8f3f746500149fc40",
+        "rev": "772b1363264e3a4651b2627a8e917325e2560479",
         "type": "github"
       },
       "original": {
@@ -335,11 +335,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1795614498,
-        "narHash": "sha256-HgJ/d9CgRfMbjj1yhiLZrtl1danFXH2tXqOdwnQn0gI=",
+        "lastModified": 1795653189,
+        "narHash": "sha256-TuoYmAiNWFg5morOREQ1AO/xXMpgqrK4Ibs2pOpO4sA=",
         "owner": "noctalia-dev",
         "repo": "noctalia",
-        "rev": "30254799f51c6bdb06fa21936e36214c93a455b5",
+        "rev": "b7e90676fed15a8930c2ae74c497689dc14c4e73",
         "type": "github"
       },
       "original": {
@@ -433,11 +433,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1795651728,
-        "narHash": "sha256-deamyDudtqA42SxkSNTiUYG1fbhmls/quedFSllhfxk=",
+        "lastModified": 1795657337,
+        "narHash": "sha256-w2c2jV9ag/6ZXd1jqDEzN7KigMCC1nXzgJDDjt2UlfQ=",
         "owner": "sonorahq",
         "repo": "sonora",
-        "rev": "87606667bf8eba9fcfc888963866e87fa2e0496a",
+        "rev": "c2c5fa758c0a3e78dba0fdae83292aa12093cab1",
         "type": "github"
       },
       "original": {
